@@ -9,7 +9,7 @@ load_dotenv()
 threshold = os.getenv('WM-WD-KH95-00')
 print(threshold)
 
-BACKEND_URL="http://onem2m.iiit.ac.in:443/~/in-cse/in-name/AE-DM/"
+BACKEND_URL="XXXXXXXXXXXX"
 
 def post_to_onem2m_act(node_name, status):
     epoch_time = int(time.time())
@@ -23,7 +23,7 @@ def post_to_onem2m_act(node_name, status):
         }
     })
     headers = {
-        'X-M2M-Origin': 'DeviceMon@20:9G&6OnuL1iZ',
+        'X-M2M-Origin': 'XXXXXXX:XXXXXXX',
         'Content-Type': 'application/json;ty=4'
     }
     response = requests.post(url, headers=headers, data=payload)
